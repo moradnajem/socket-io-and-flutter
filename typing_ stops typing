@@ -1,0 +1,13 @@
+//Someone is typing
+socket.on('typing', function(data) {
+io.sockets.in(myroom).emit('typing',{message: "notifyTyping"});	    			    		
+});
+
+
+
+
+
+//when soemone stops typing
+socket.on('stopTyping', function(data) {
+io.sockets.in(myroom).emit('stopTyping',{message: "notifyStopTyping"});	    			    		
+});
