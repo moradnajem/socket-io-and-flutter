@@ -1,0 +1,5 @@
+mkdir myapp  
+cd myapp
+npm init
+npm install socket.io express --save
+npm install jquery --save
